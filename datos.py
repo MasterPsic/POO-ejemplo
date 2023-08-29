@@ -23,9 +23,7 @@ class Ingreso():
                         nombreCorrecto = True
                         print(nombre)
                     else:
-                else:
-            else:
- # Verificar los ultimos else                       
+                       
 
     def agregar (self): 
         print('agregar Usuario')
@@ -50,7 +48,7 @@ class Ingreso():
                 obj,listar()
 
     def historial(self):
-        print ('historial de usuario')
+        print ('historial de usuarios')
         dni = input('dni: ')
         for obj in listaUsuario:
             if dni == obj.dni:
@@ -71,12 +69,13 @@ class Ingreso():
 
     def editarUsuario(self):
         print('Editar Saldo')
-        dni = input('Ingrese dni a editar')
-        for usuario in listarUsuario:
+        dni = input('Ingrese dni a Editar')
+        for usuario in listaUsuario:
             if dni == usuario.dni:
                 nombre = input('Nombre: ')
-                apellido = input('Apellido')
-                deposito = int(input'Deposito'))
+                apellido = input('Apellido:')
+                deposito = int(input('Deposito'))
+                retiro = int(input'Retiro'))
                 usuario.editarUsuario(nombre, apellido, deposito, retiro)
                 usuario.listar()
                 modificado = usuario.modificaciones(deposito, retiro)

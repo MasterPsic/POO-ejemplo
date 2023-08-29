@@ -8,18 +8,19 @@ class usuario():
         self.saldo = (deposito - retiro)
         self .historial = []
 
-    def listar (self):
-        print("""
-            Dni; {self.dni}
-            Nombre: {self.nombre}
-            Deposito: {self.deposito}
-            Retiro: {}
-            """.format(self.dni, self.nombre, self.deposito))
+    def listar(self):
+        print('''
+                Dni; {self.dni}
+                Nombre: {self.nombre}
+                Deposito: {self.deposito}
+                Retiro: {}
+                Saldo: {}
+                '''.format (self.dni, self.nombre, self.deposito, self.retiro,self.saldo))
 
     def modificaciones (self, deposito, retiro):
         return f'''
-                Deposito: (deposito)
-                Retiro: (retiro)
+                Deposito: {deposito}
+                Retiro: {retiro}
                 '''
 
     def editarSaldo(self, deposito, retiro):
@@ -30,5 +31,5 @@ class usuario():
     def editarUsuario(self, nombre, apellido, deposito, retiro):
         self.nombre = nombre
         self.apellido = apellido
-        def.deposito = deposito
-        def.saldo = +- (deposito-retiro)
+        self.deposito = deposito
+        self.saldo = +- (deposito-retiro)
