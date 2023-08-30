@@ -5,8 +5,8 @@ class Vehiculo():
         self.color = Color
 
     def __str__(self):
-        return f'''
+        return f"""
             Marca: {self.marca}
             Modelo: {self.modelo}:
-            Color: {self.color}
-
+            Color: {self.color}"""
+    
