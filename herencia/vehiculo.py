@@ -10,3 +10,13 @@ class Vehiculo():
             Modelo: {self.modelo}:
             Color: {self.color}"""
     
+class Auto(Vehiculo):
+    def __init__(self, Marca, Modelo, Color, puerta, patente):
+        super().__init__(Marca, Modelo, Color)
+        self.puerta = puerta
+        self.patente = patente
+
+    def __str__(self):
+        return super().__str__() + f"""
+                Cantidad de Puertas: {self.puerta}"""
+       
